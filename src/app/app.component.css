@@ -1,0 +1,9 @@
+p {
+  font-family: Lato;
+}
+
+.threeColumnLayout{
+ display: inline-block;
+ padding:20px;
+
+}

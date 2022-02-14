@@ -1,0 +1,19 @@
+<p>Start editing to see some magic happen :)</p>
+<app-child (eventEm)="setValue($event)"></app-child>
+<!-- <app-parent [dataFromChildElement] = "dataFromChild" ></app-parent> -->
+<!-- {{ dataFromChild | json }} -->
+
+<div
+  appHighlight
+  [ngClass]="(in < numberOfColumns) ?'threeColumnLayout':''"
+  [id]="in"
+  *ngFor="let item of dataFromChild; let in = index"
+>
+  {{ item.product }}
+</div>
+
+<!-- <form [formGroup]="saveDataModel">
+  <input [control] = ""/>
+  <input [control] = "" />
+
+</form> -->
